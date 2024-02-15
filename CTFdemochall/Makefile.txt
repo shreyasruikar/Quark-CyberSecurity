@@ -1,0 +1,4 @@
+all: heapthread.c
+	gcc heapthread.c -o heapthread -lpthread && strip heapthread
+debug: heapthread.c
+	clang heapthread.c -o heapthread -lpthread -g
